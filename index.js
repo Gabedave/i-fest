@@ -160,4 +160,10 @@ window.onload = () => {
   $('.carousel').carousel({
     interval: 3000,
   })
+  // let i = 0
+  // setInterval(() => {
+  //   const festivals = festivalsF()
+  //   let name = festivals[i++ % festivals.length].name
+  //   document.getElementById("create-trip").innerHTML = `Create a trip to ${name}`
+  // }, 3000)
 }

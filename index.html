@@ -183,10 +183,10 @@
             <div class="landing-page-content-container">
               <div class="landing-page-container1">
                 <h1 class="landing-page-text09 heading">View all festivals</h1>
-                <h2 class="landing-page-subheading subheading">
+                <h2 class="landing-page-subheading subheading m-0">
                   for your travels
                 </h2>
-                <span class="landing-page-text10">
+                <span class="landing-page-text10 py-3">
                   <span>Book any Festival,</span>
                   <br />
                   <span>And visit nearby landmarks</span>
@@ -203,7 +203,7 @@
                 autoplay
                 class="landing-page-video"
               ></video> -->
-              <div class="solid-button-container">
+              <div class="solid-button-container py-3">
                 <a href="#festival_cards" class="solid-button-button button">
                   <span>Explore festivals</span>
                 </a>
@@ -211,11 +211,17 @@
             </div>
           </div>
         </div>
-        <div id="main-section" class="landing-page-main container-fluid">
+        <div id="create" class="landing-page-main container-fluid pb-3">
           <div id="map"></div>
-          <div id="create-a-trip" class="row" width="200px">
-            <div class="border rounded py-2 px-3 bg-light mx-auto">
-              <h3 class="font-weight-light m-0">Create a Trip</h3>
+          <div id="create-a-trip" class="border bg-light rounded row mx-1" width="200px">
+            <div class="py-2 px-3 mx-auto col-9">
+              <h4 class="font-weight-light m-0 mt-1 py-1" id="create-trip">Create a trip</h4>
+              <p class="py-1 m-0 text-muted">Start planning your trip for Olojo Festival</p>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+              <button href="#modal" class="btn btn-dark btn-circle btn-icon d-flex align-items-center justify-content-center" style="border-radius: 50%; width: 50px; height: 50px">
+                <i class="material-symbols-rounded" style="font-size: 30px;">add</i>
+              </button>
             </div>
           </div>
         </div>
@@ -242,37 +248,6 @@
             </a>
           </div>
           <!-- corousel end -->
-
-          <!-- Things to do start -->
-          <div id="trip-section" class="container">
-            <div class="row p-3">
-              <div class="col text-center">
-                <div class="row">
-                  <i class="material-symbols-rounded mx-auto">photo_camera</i>
-                </div>
-                <span><head>Things to do</head></span>
-              </div>
-              <div class="col text-center">
-                <div class="row">
-                  <i class="material-symbols-rounded mx-auto">flight_takeoff</i>
-                </div>
-                <span><head>Flights</head></span>
-              </div>
-              <div class="col text-center">
-                <div class="row">
-                  <i class="material-symbols-rounded mx-auto">hotel</i>
-                </div>
-                <span><head>Hotels</head></span>
-              </div>
-              <div class="col text-center">
-                <div class="row">
-                  <i class="material-symbols-rounded mx-auto">house</i>
-                </div>
-                <span><head>Holiday Rentals</head></span>
-              </div>
-            </div>
-          </div>
-          <!-- Things to do end -->
           
           <div id="festival_cards" class="landing-page-cards-container">
             <!-- <div class="place-card-container">
@@ -402,11 +377,45 @@
               </div>
             </div> -->
           </div>
+
+          <!-- Things to do start -->
+          <div id="trip-section" class="container">
+            <div class="row p-3">
+              <div class="col text-center">
+                <div class="row">
+                  <i class="material-symbols-rounded mx-auto">photo_camera</i>
+                </div>
+                <span><head>Things to do</head></span>
+              </div>
+              <div class="col text-center">
+                <div class="row">
+                  <i class="material-symbols-rounded mx-auto">flight_takeoff</i>
+                </div>
+                <span><head>Flights</head></span>
+              </div>
+              <div class="col text-center">
+                <div class="row">
+                  <i class="material-symbols-rounded mx-auto">hotel</i>
+                </div>
+                <span><head>Hotels</head></span>
+              </div>
+              <div class="col text-center">
+                <div class="row">
+                  <i class="material-symbols-rounded mx-auto">house</i>
+                </div>
+                <span><head>Holiday Rentals</head></span>
+              </div>
+            </div>
+          </div>
+          <!-- Things to do end -->
         </div>
 
         <div class="landing-page-footer">
           <div class="landing-page-menu">
-            <h1>i fest</h1>
+            <div style="width: 100px; height: auto;">
+              <img style="max-width: 100%; object-fit: contain;" src="./images/ifest-logo.png" alt="ifest-logo-dark">
+            </div>
+            <!-- <h1>i fest</h1> -->
             <div class="landing-page-links-container2">
               <div class="landing-page-container3">
                 <a
