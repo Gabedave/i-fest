@@ -317,7 +317,7 @@
   max-width: 1000px;
   margin-top: var(--dl-space-space-doubleunit);
   align-items: flex-start;
-  margin-bottom: var(--dl-space-space-doubleunit);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: row;
   justify-content: space-between;
 }
