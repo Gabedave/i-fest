@@ -159,7 +159,7 @@ function populateFestivals() {
 const populateModal = () => {
   const olojoFestival = festivalsF()[festivalsF().length - 1]
   document.getElementById("festivalModalTitle").innerHTML = olojoFestival.name
-  document.getElementById("festivalModalBody").innerHTML = `
+  document.getElementById("festivalModalBody").innerHTML += `
   <div><p>${olojoFestival.long_description}</p></div>
   <p class="text-muted m-0">${olojoFestival.source}</p>
   `
@@ -168,10 +168,10 @@ const populateModal = () => {
 window.onload = () => {
   populateLandmark()
   populateFestivals()
+  populateModal()
   $('.carousel').carousel({
     interval: 3000,
   })
-  populateModal()
   // let i = 0
   // setInterval(() => {
   //   const festivals = festivalsF()
