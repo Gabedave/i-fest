@@ -59,13 +59,21 @@ const landmarksF = () => [
   },
 ]
 
-function initMap() {
+function initMap(focus = null) {
   const landmarks = landmarksF()
   const festivals = festivalsF()
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: festivals[0].location,
-  });
+  let map
+  if (focus) {
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13,
+      center: focus.location,
+    });
+  } else {
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: festivals[0].location,
+    });
+  }
   
   for( let i = 0; i < festivals.length; i++ ) {
     festival = festivals[i]
@@ -146,15 +154,21 @@ function populateFestivals() {
           </span>
         </span>
         <div class="outline-button-container">
-          <button class="outline-button-button button">
+          <button class="outline-button-button button" onclick="focusmap(${festivals.indexOf(festival)})">
             <span>Discover festival</span>
           </button>
         </div>
       </div>
     </div>`
   })
-  
 };
+
+function focusmap (index) {
+  const focus = festivalsF()[index]
+  // console.log(focus)
+  location.href = "#map";
+  initMap(focus);
+}
 
 const populateModal = () => {
   const olojoFestival = festivalsF()[festivalsF().length - 1]
